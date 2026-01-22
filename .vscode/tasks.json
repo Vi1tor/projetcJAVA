@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "maven-test",
+      "type": "shell",
+      "command": "mvn",
+      "args": ["test"],
+      "group": "build",
+      "problemMatcher": ["$maven"],
+      "options": {
+        "cwd": "."
+      }
+    },
+    {
+      "label": "maven-run",
+      "type": "shell",
+      "command": "mvn",
+      "args": ["spring-boot:run"],
+      "group": "none",
+      "problemMatcher": ["$maven"],
+      "options": {
+        "cwd": "."
+      }
+    }
+  ]
+}
